@@ -5,6 +5,7 @@
     height: 650px;
     background-repeat: no-repeat;
     margin: 0 auto;
+    position: relative;
 }
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -36,8 +37,33 @@ only screen and (                min-resolution: 2dppx) {
     font-size: 15px;
     line-height: 25px;
     color: #FFFFFF;
-    width: calc(100% - 715px);
+    width: calc(100% - 715px + 90px +490px);
     margin: 40px 0;
+    padding-left: 95px;
+    padding-right: 490px;
+    display: flex;
+    &::after {
+        background-image: url("../img/intro-chiziq.svg");
+        background-repeat: no-repeat;
+        content: "";
+        height: 15px;
+        width: 202px;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 353px;
+    }
+    &::before {
+        background-image: url("../img/intro-strelka.svg");
+        background-repeat: no-repeat;
+        content: "";
+        height: 150px;
+        width: 450px;
+        display: block;
+        position: absolute;
+        left: 800px;
+        top: 353px;
+    }
 }
 .intro__link {
     &:hover {

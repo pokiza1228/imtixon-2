@@ -1,21 +1,24 @@
 .guide {
     padding-top: 160px;
     padding-bottom: 140px;
+    position: relative;
+    max-width: 1440px;
 }
 .guide__list {
     @include list-steyle;
     display: flex;
     justify-content: space-between;
-    position: relative;
+    
     &::after {
         border: 15px solid #E5ECF4;
+        background-color: #E5ECF4;
         display: block;
         height: 1px;
         width: 900px;
         content: "";
         position: absolute;
         z-index: -1;
-        top: 35px;
+        top: 188px;
         left: 0;
     }
 }
