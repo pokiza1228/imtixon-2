@@ -1,0 +1,51 @@
+.guide {
+    padding-top: 160px;
+    padding-bottom: 140px;
+}
+.guide__list {
+    @include list-steyle;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &::after {
+        border: 15px solid #E5ECF4;
+        display: block;
+        height: 1px;
+        width: 900px;
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 35px;
+        left: 0;
+    }
+}
+.guide__item {
+    width: calc((100% - 60px) / 3);
+    padding-top: 136px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+.guide__item--app {
+    background-image: url("../img/guide1.svg");
+}
+.guide__item--scooter {
+    background-image: url("../img/guide2.svg");
+}
+.guide__item--ride {
+    background-image: url("../img/guide3.svg");
+}
+.guide__item-title {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: -1.07143px;
+    color: #495567;
+    margin-bottom: 27px;
+}
+.guide__item-text {
+    font-size: 15px;
+    line-height: 25px;
+    color: #939CAA;
+}
