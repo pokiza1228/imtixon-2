@@ -696,4 +696,24 @@ a {
 .footer__item:last-child {
   margin-right: 0;
 }
+
+.about-intro {
+  background-image: url("../../img/about-intro.jpg");
+  background-repeat: no-repeat;
+  max-width: 1440px;
+  height: 200px;
+  margin: 0 auto;
+  background-position: center center;
+}
+
+.about-intro__tittle {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+  padding: 72px 0;
+}
 /*# sourceMappingURL=main.css.map */

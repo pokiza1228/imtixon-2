@@ -4,6 +4,8 @@
     max-width: 1440px;
     height: 650px;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     margin: 0 auto;
     position: relative;
 }
@@ -18,9 +20,6 @@ only screen and (                min-resolution: 2dppx) {
   .intro {
     background-image: url("../img/intro2x.jpg");
   }
-}
-.intro__container {
-    
 }
 .intro__title {
     font-family: "Space Mono";
