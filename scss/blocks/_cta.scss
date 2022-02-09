@@ -62,3 +62,29 @@
     bottom: calc(50% - 347px);
     left: calc(100% -150px);    
 }
+@media only screen and (max-width: $tablet) {
+    .cta__container {
+        padding-top: 62px;
+        padding-bottom: 62px;
+       flex-direction: column;
+       justify-content: center;
+    }
+    .cta__logo {
+        margin: 0;
+        margin-top: 40px;
+    }
+    .cta__title {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: $mobile) {
+    .cta__container {
+        padding-top: 88px;
+        padding-bottom: 88px;
+    }
+    .cta__title {
+        width: 311px;
+        font-size: 32px;
+        line-height: 32px;
+    }
+}
