@@ -856,6 +856,138 @@ a {
   }
 }
 
+.faqs {
+  padding-bottom: 160px;
+}
+
+.faqs__title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+
+.faqs__list {
+  list-style: none;
+}
+
+.faqs__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 64px;
+}
+
+.faqs__item:last-child {
+  margin-bottom: 0;
+}
+
+.faqs__item-title {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1.78571px;
+  color: #495567;
+  width: 350px;
+}
+
+.faqs__item-list {
+  list-style: none;
+}
+
+.faqs__item-item {
+  width: 730px;
+  padding: 32px 40px;
+  background-color: #F2F5F9;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.faqs__item-item:last-child {
+  margin-bottom: 0;
+}
+
+.faqs__item-item::after {
+  content: "";
+  width: 25px;
+  height: 20px;
+  background-image: url("../img/pastga.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 40px;
+}
+
+.faqs__item-item--opened .faqs__item-item-title {
+  margin-bottom: 24px;
+}
+
+.faqs__item-item--opened::after {
+  background-image: url("../img/tepaga.svg");
+  top: 32px;
+}
+
+.faqs__item-item-title {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+
+.faqs__item-item-text {
+  font-size: 15px;
+  line-height: 25px;
+  color: #495567;
+}
+
+@media only screen and (max-width: 1119px) {
+  .faqs__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .faqs__item-title {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .faqs__item-item {
+    width: 311px;
+    padding: 32px;
+  }
+  .faqs__item-item::after {
+    right: 32px;
+  }
+  .faqs__item-item-title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .faqs__item-item-text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+}
+
 .about-intro {
   background-image: url("../img/about-intro.jpg");
   background-repeat: no-repeat;
