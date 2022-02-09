@@ -7,3 +7,26 @@
 .header__link {
     margin-left: auto;
 }
+.burger {
+    display: none;
+    background-color: aqua;
+}
+@media only screen and (max-width: $mobile){
+    .header__container {
+        
+        padding-bottom: 22px;
+    }
+    .header__nav {
+        display: none;
+    }
+    .burger {
+        display: block;
+       
+    }
+    .header__link {
+        display: none;
+    }
+    .header__logo {
+        margin: 0 auto;
+    }
+}
