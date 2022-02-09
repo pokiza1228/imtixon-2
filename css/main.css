@@ -883,6 +883,37 @@ a {
   padding: 72px 0;
 }
 
+@media only screen and (max-width: 1119px) {
+  .about-intro {
+    background-image: url("../img/about-intro-tablet.jpg");
+  }
+}
+
+@media only screen and (max-width: 1119px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 1119px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 1119px) and (min-device-pixel-ratio: 2), only screen and (max-width: 1119px) and (min-resolution: 192dpi), only screen and (max-width: 1119px) and (min-resolution: 2dppx) {
+  .about-intro {
+    background-image: url("../img/about-intro-tablet2x.jpg");
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about-intro {
+    background-image: url("../img/about-intro-mobile.jpg");
+  }
+}
+
+@media only screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-device-pixel-ratio: 2), only screen and (max-width: 767px) and (min-resolution: 192dpi), only screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .about-intro {
+    background-image: url("../img/about-intro-mobile@2x.jpg");
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about-intro__tittle {
+    padding: 60px 0;
+    text-align: center;
+  }
+}
+
 .cta {
   background-color: #495567;
   position: relative;
