@@ -14,7 +14,7 @@
         background-color: #E5ECF4;
         display: block;
         height: 1px;
-        width: 900px;
+        width: 65%;
         content: "";
         position: absolute;
         z-index: -1;
@@ -25,17 +25,36 @@
 .guide__item {
     width: 350px;
     padding-top: 136px;
-    background-position: left top;
-    background-repeat: no-repeat;
+    position: relative;
+    
+    &::before {
+        width: 96px;
+        height: 96px;
+        border-radius: 50%;
+        background-color: rgba(252, 183, 43, 1);
+        content: "";
+        display: block;
+        background-position: center center;
+        background-repeat: no-repeat;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
 .guide__item--app {
-    background-image: url("../img/guide1.svg");
+    &::before {
+        background-image: url("../img/guide1.svg");
+    }
 }
 .guide__item--scooter {
-    background-image: url("../img/guide2.svg");
+    &::before {
+        background-image: url("../img/guide2.svg");
+    }
 }
 .guide__item--ride {
-    background-image: url("../img/guide3.svg");
+    &::before {
+        background-image: url("../img/guide3.svg");
+    }
 }
 .guide__item-title {
     font-family: "Space Mono";
@@ -98,6 +117,9 @@
         width: 311px;
         padding-top: 120px;
         background-position: center top;
+        &::before {
+            left: calc(50% - 48px);
+        }
     }
 }
 

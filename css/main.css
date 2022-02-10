@@ -513,13 +513,16 @@ a {
   width: 500px;
 }
 
+.intro-wrapper {
+  padding-left: 95px;
+}
+
 .intro__text {
   font-size: 15px;
   line-height: 25px;
   color: #FFFFFF;
-  width: 500px;
+  width: 405px;
   margin: 40px 0;
-  padding-left: 95px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -545,7 +548,7 @@ a {
   width: 450px;
   display: block;
   position: absolute;
-  left: 700px;
+  left: 705px;
   top: 353px;
 }
 
@@ -575,8 +578,8 @@ a {
   .intro__text {
     padding: 0;
     text-align: center;
-    width: 500px;
-    margin: 24px auto 32px auto;
+    width: 573px;
+    margin: 24px 0 32px 0;
   }
   .intro__text::after {
     display: none;
@@ -639,7 +642,7 @@ a {
   background-color: #E5ECF4;
   display: block;
   height: 1px;
-  width: 900px;
+  width: 65%;
   content: "";
   position: absolute;
   z-index: -1;
@@ -650,19 +653,32 @@ a {
 .guide__item {
   width: 350px;
   padding-top: 136px;
-  background-position: left top;
-  background-repeat: no-repeat;
+  position: relative;
 }
 
-.guide__item--app {
+.guide__item::before {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-color: #fcb72b;
+  content: "";
+  display: block;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.guide__item--app::before {
   background-image: url("../img/guide1.svg");
 }
 
-.guide__item--scooter {
+.guide__item--scooter::before {
   background-image: url("../img/guide2.svg");
 }
 
-.guide__item--ride {
+.guide__item--ride::before {
   background-image: url("../img/guide3.svg");
 }
 
@@ -736,6 +752,9 @@ a {
     width: 311px;
     padding-top: 120px;
     background-position: center top;
+  }
+  .guide__item::before {
+    left: calc(50% - 48px);
   }
 }
 
