@@ -1,35 +1,29 @@
 .cta {
     background-color: rgba(73, 85, 103, 1);
     position: relative;
+    background-image: url("../img/cta.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
 }
+@media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+      
+      .cta {
+        background-image: url("../img/cta@2x.jpg");
+      }
+    }
 .cta__container {
     padding: 102px 0;
     display: flex;
     align-items: center;
     position: relative;
     overflow: hidden;
-    &::after {
-        content: "";
-        width: 347px;
-        height: 347px;
-        border: 15px solid rgba(229, 236, 244, 0.1);
-        transform: matrix(-1, 0, 0, 1, 0, 0);
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 250px;
-    }
-    &::before {
-        content: "";
-        width: 347px;
-        height: 347px;
-        border: 15px solid rgba(229, 236, 244, 0.1);
-        transform: matrix(-1, 0, 0, 1, 0, 0);
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        left: 700px;
-    }
 }
 .cta__title {
     font-family: Space Mono;
@@ -63,6 +57,21 @@
     left: calc(100% -150px);    
 }
 @media only screen and (max-width: $tablet) {
+    .cta {
+        background-image: url("../img/cta-tablet.jpg");
+    }
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+      
+      .cta {
+        background-image: url("../img/cta-tablet@2x.jpg");
+      }
+    }
     .cta__container {
         padding-top: 62px;
         padding-bottom: 62px;
@@ -78,6 +87,21 @@
     }
 }
 @media only screen and (max-width: $mobile) {
+    .cta {
+        background-image: url("../img/cta-mobile.jpg");
+    }
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+      
+      .cta {
+        background-image: url("../img/cta-mobile@2x.jpg");
+      }
+    }
     .cta__container {
         padding-top: 88px;
         padding-bottom: 88px;

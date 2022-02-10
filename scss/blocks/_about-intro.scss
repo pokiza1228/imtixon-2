@@ -28,6 +28,7 @@ only screen and (                min-resolution: 2dppx) {
     letter-spacing: -2.5px;
     color: #FFFFFF;
     padding: 72px 0;
+    margin: 0;
 }
 @media only screen and (max-width: $tablet) {
   .about-intro {

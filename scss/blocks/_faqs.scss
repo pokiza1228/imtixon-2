@@ -59,6 +59,10 @@
         top: calc(50% - 10px);
         right: 40px;
     }
+    &:hover {
+        background-color: #FFF4DF;
+        cursor: pointer;
+    }
 }
 .faqs__item-btn-title {
     font-family: "Space Mono";
@@ -94,6 +98,7 @@
         align-items: center;
     }
     .faqs__item-title {
+        margin: 0;
         text-align: center;
         margin-bottom: 32px;
     }
