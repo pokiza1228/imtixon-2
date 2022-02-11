@@ -516,7 +516,7 @@ a {
 }
 
 .main-link:hover {
-  background-color: #fff;
+  background-color: transparent;
   color: #FCB72B;
 }
 
