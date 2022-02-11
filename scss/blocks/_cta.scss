@@ -43,19 +43,6 @@
 .cta__logo-link {
     margin-right: 18px;
 }
-.cta__inner {
-    display: block;
-    width: 347px;
-    height: 347px;
-    background-color: #E5ECF4;
-    mix-blend-mode: normal;
-    opacity: 0.1;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-    border-radius: 50%;
-    position: absolute;
-    bottom: calc(50% - 347px);
-    left: calc(100% -150px);    
-}
 @media only screen and (max-width: $tablet) {
     .cta {
         background-image: url("../img/cta-tablet.jpg");
