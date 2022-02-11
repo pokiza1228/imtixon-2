@@ -520,6 +520,10 @@ a {
   color: #FCB72B;
 }
 
+.header {
+  background-color: white;
+}
+
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -859,6 +863,8 @@ a {
 
 .benifits {
   margin-bottom: 307px;
+  max-width: 1440px;
+  overflow: hidden;
 }
 
 .benifits--about {
@@ -996,6 +1002,54 @@ a {
   color: #939CAA;
   margin-top: 24px;
   margin-bottom: 40px;
+}
+
+@media only screen and (max-width: 1119px) {
+  .benifits {
+    margin-bottom: 104px;
+  }
+  .benifits__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    margin-bottom: 128px;
+  }
+  .benifits__item:nth-child(2n-1) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .benifits__item:nth-child(2n-1) .benifits__wrapper {
+    margin-right: 0;
+  }
+  .benifits__item:nth-child(2n) .benifits__wrapper {
+    margin-left: 0;
+  }
+  .benifits__item:nth-child(2n-1)::after {
+    left: calc(50% + 285px);
+    top: 0;
+  }
+  .benifits__item:nth-child(2n)::after {
+    left: calc(50% - 285px - 445px);
+    top: 0;
+  }
+  .benifits__item--easy::before {
+    top: 307px;
+    left: calc(50% - 370px);
+  }
+  .benifits__item--coming::before {
+    left: calc(50% - 447px);
+  }
+  .benifits__item--zero::before {
+    left: 50%;
+    top: 106px;
+  }
+  .benifits__img {
+    margin-bottom: 64px;
+  }
 }
 
 .our-values {
