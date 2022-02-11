@@ -857,6 +857,147 @@ a {
   }
 }
 
+.benifits {
+  margin-bottom: 307px;
+}
+
+.benifits--about {
+  padding-top: 120px;
+}
+
+.benifits__list {
+  list-style: none;
+}
+
+.benifits__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 139px;
+}
+
+.benifits__item:nth-child(2n-1) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.benifits__item:nth-child(2n-1) .benifits__wrapper {
+  margin-right: 220px;
+}
+
+.benifits__item:nth-child(2n) .benifits__wrapper {
+  margin-left: 220px;
+}
+
+.benifits__item:last-child {
+  margin-bottom: 0;
+}
+
+.benifits__item::after {
+  content: "";
+  display: block;
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #e5ecf4;
+  z-index: 1;
+}
+
+.benifits__item::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: 2;
+}
+
+.benifits__item:nth-child(2n-1)::after {
+  left: calc(50% + 600px);
+}
+
+.benifits__item:nth-child(2n)::after {
+  left: calc(50% - 646px - 400px);
+}
+
+.benifits__item--easy::before {
+  background-image: url("../img/benifits1.svg");
+  bottom: 0;
+  left: 50%;
+  width: 740px;
+  height: 150px;
+}
+
+.benifits__item--coming::before {
+  background-image: url("../img/intro-strelka.svg");
+  width: 447px;
+  height: 140px;
+  top: 0;
+  left: calc(50% - 790px);
+}
+
+.benifits__item--zero::before {
+  background-image: url("../img/benifits1.svg");
+  width: 740px;
+  height: 150px;
+  left: calc(50% + 340px);
+  top: 80px;
+}
+
+.benifits__item--mobility::before {
+  width: 735px;
+  height: 140px;
+  background-image: url("../img/about-strelka.svg");
+  bottom: 30px;
+  left: 50%;
+}
+
+.benifits__item--better::before {
+  background-image: url("../img/intro-strelka.svg");
+  width: 447px;
+  height: 140px;
+  top: 0;
+  left: calc(50% - 800px);
+}
+
+.benifits__wrapper {
+  width: 445px;
+}
+
+.benifits__img {
+  border-radius: 50%;
+  width: 445px;
+  height: 445px;
+}
+
+.benifits__title {
+  font-family: Space Mono;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+
+.benifits__text {
+  font-size: 15px;
+  line-height: 25px;
+  color: #939CAA;
+  margin-top: 24px;
+  margin-bottom: 40px;
+}
+
 .our-values {
   padding-top: 78px;
   padding-bottom: 120px;
