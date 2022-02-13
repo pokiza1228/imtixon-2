@@ -505,14 +505,32 @@ a {
     display: none;
   }
   .header__nav--opened {
+    width: 256px;
     display: block;
+    padding-left: 10px;
     position: absolute;
     top: 100%;
+    left: 0;
     height: calc(100vh - 74px);
+    margin-bottom: calc(100% - 53px);
+    background-color: #333A44;
   }
   .header__nav--opened .nav__list {
     display: block;
     margin-left: 0;
+    padding-top: 64px;
+  }
+  .header__nav--opened .nav__list .nav__item {
+    margin: 0;
+    margin-bottom: 24px;
+  }
+  .header__nav--opened .nav__list .nav__item:last-child {
+    margin-bottom: 0;
+  }
+  .header__nav--opened + .header__link {
+    display: inline;
+    position: absolute;
+    top: calc(100vh - 74px);
   }
   .header__link {
     display: none;
@@ -1408,7 +1426,6 @@ a {
   background-image: url("../img/cta.jpg");
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -1454,6 +1471,7 @@ a {
 @media only screen and (max-width: 1119px) {
   .cta {
     background-image: url("../img/cta-tablet.jpg");
+    background-size: cover;
   }
 }
 

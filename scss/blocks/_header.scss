@@ -19,14 +19,34 @@
         display: none;
     }
     .header__nav--opened {
+        width: 256px;
         display: block;
+        padding-left: 10px;
         position: absolute;
         top: 100%;
+        left: 0;
         height: calc(100vh - 74px);
+        margin-bottom: calc(100% - 53px);
         & .nav__list {
             display: block;
             margin-left: 0;
+            padding-top: 64px;
+            
         }
+        background-color: #333A44;
+    }
+    .header__nav--opened .nav__list .nav__item {
+        margin: 0;
+        margin-bottom: 24px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .header__nav--opened +.header__link {
+        display: inline;
+        position: absolute;
+        top: calc(100vh - 74px);
+        //margin-left: 32px;
     }
     .header__link {
         display: none;
