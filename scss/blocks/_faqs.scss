@@ -43,8 +43,8 @@
     width: 730px;
     padding: 32px 40px;
     background-color: #F2F5F9;
-    margin-bottom: 16px;
     position: relative;
+    margin-bottom: 32px;
     &:last-child {
         margin-bottom: 0;
     }
@@ -59,12 +59,14 @@
         top: calc(50% - 10px);
         right: 40px;
     }
+    &:hover+.faqs__item-btn-text {
+        background-color: #FFF4DF;
+        cursor: pointer;
+    }
     &:hover {
         background-color: #FFF4DF;
         cursor: pointer;
     }
-}
-.faqs__item-btn-title {
     font-family: "Space Mono";
     font-style: normal;
     font-weight: bold;
@@ -78,16 +80,18 @@
     font-size: 15px;
     line-height: 25px;
     color: #495567;
+    width: 730px;
+    padding: 0  40px 32px;
+    background-color: #F2F5F9;
+    margin-bottom: 16px;
 }
 .faqs__item-btn--opened {
-    & .faqs__item-btn-title {
-        margin-bottom: 24px;
-    }
+    margin-bottom: 0;
     &::after {
         background-image: url("../img/tepaga.svg");
         top: 32px;
     }
-    & .faqs__item-btn-text {
+    &+.faqs__item-btn-text {
         display: block;
     }
 }
@@ -107,15 +111,15 @@
     .faqs__item-btn {
         width: 311px;
         padding: 32px;
+        font-size: 18px;
+        line-height: 24px;
         &::after {
             right: 32px;
         }
     }
-    .faqs__item-btn-title {
-        font-size: 18px;
-        line-height: 24px;
-    }
     .faqs__item-btn-text {
+        width: 311px;
+        padding: 0 32px 32px;
         font-size: 15px;
         line-height: 25px;
     }

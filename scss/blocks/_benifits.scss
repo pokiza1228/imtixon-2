@@ -125,9 +125,6 @@
     margin-top: 24px;
     margin-bottom: 40px;
 }
-.benifits__link {
-    padding: 14px 43px;
-}
 @media only screen and (max-width: $tablet) {
     .benifits {
         margin-bottom: 104px;
@@ -190,7 +187,6 @@
 @media only screen and (max-width: $mobile) {
     .benifits__wrapper {
         width: 311px;
-
     }
     .benifits__title {
         font-size: 32px;
@@ -207,7 +203,8 @@
     }
     .benifits__item--easy {
         &::before {
-            left: calc(50% - 150px);
+            top: 190px;
+            left: calc(50% - 100px);
         }
     }
     .benifits__item--coming {
@@ -224,12 +221,16 @@
     .benifits__item--mobility {
         &::before {
             top: 171px;
-            left: calc(50% - 220px);
+            left: calc(50% - 150px);
         }
     }
     .benifits__item--better {
         &::before {
-           left: calc(50% - 250px);
+           left: calc(50% - 300px);
         }
+    }
+    .benifits__img {
+        width: 311px;
+        height: 311px;
     }
 }

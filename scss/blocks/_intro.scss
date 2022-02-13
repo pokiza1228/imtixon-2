@@ -22,6 +22,9 @@ only screen and (                min-resolution: 2dppx) {
     background-image: url("../img/intro2x.jpg");
   }
 }
+.intro__container {
+    position: relative;
+}
 .intro__title {
     font-family: "Space Mono";
     font-style: normal;
@@ -31,19 +34,17 @@ only screen and (                min-resolution: 2dppx) {
     letter-spacing: -2.5px;
     color: #FFFFFF;
     width: 500px;
-
 }
 .intro-wrapper {
     padding-left: 95px;
+    width: 500px;
+    display: block;
 }
 .intro__text {
     font-size: 15px;
     line-height: 25px;
     color: #FFFFFF;
-    width: 405px;
     margin: 40px 0;
-    
-    
     display: flex;
     &::after {
         background-image: url("../img/intro-chiziq.svg");
@@ -53,8 +54,8 @@ only screen and (                min-resolution: 2dppx) {
         width: 202px;
         display: block;
         position: absolute;
-        left: 0;
-        top: 353px;
+        left: -161px;
+        top: 200px;
     }
     &::before {
         background-image: url("../img/intro-strelka.svg");
@@ -64,8 +65,8 @@ only screen and (                min-resolution: 2dppx) {
         width: 450px;
         display: block;
         position: absolute;
-        left: 705px;
-        top: 353px;
+        left: 650px;
+        top: 200px;
     }
 }
 .intro__link {
@@ -92,27 +93,29 @@ only screen and (                min-resolution: 2dppx) {
         background-image: url("../intro-tablet@2x.jpg");
       }
     }
+    .intro-wrapper {
+        text-align: center;
+        padding: 0;
+        width: 573px;
+        margin: 0 auto;
+    }
     .intro__title {
         text-align: center;
         margin: 0 auto;
     }
     
     .intro__text {
-        padding: 0;
-        text-align: center;
-        width: 573px;
         margin: 24px 0 32px 0;
         &::after {
             display: none;
         }
         &::before {
-            left: -127px;
-            top: 473px;
+            left: 0px;
+            top: 350px;
         }
     }
     .intro__link {
-    
-        
+    margin: 0 auto;
     }
 }
 @media only screen and (max-width: $mobile) {
@@ -140,10 +143,13 @@ only screen and (                min-resolution: 2dppx) {
         line-height: 40px;
         width: 311px;
     }
+    .intro-wrapper {
+         width: 311px;
+    }
     .intro__text {
-        width: 311px;
+       
         &::before {
-            left: -300px;
+            left: -280px;
         }
     }
 }
