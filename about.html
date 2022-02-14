@@ -46,10 +46,10 @@
             <ul class="benifits__list">
                 <li class="benifits__item benifits__item--mobility">
                     <picture>
-                        <source type="imahe/webp" media="(max-width: 767px)"
+                        <source type="image/webp" media="(max-width: 767px)"
                             srcset="img/about-telephone-mobile@2x.webp 2x, img/about-telephone-mobile.webp 1x">
-                        <source type="image/webp" srcset="img/about-benifits1@2x.webp 2x, img/about-benifits1.webp 1x">
-                        <source media="(max-width: 719px)"
+                        <source type="image/webp" srcset="img/about-benifits1@2x.webp 2x, img/about-benifits1.webp">
+                        <source media="(max-width: 767px)"
                             srcset="img/about-telephone-mobile@2x.jpg 2x, img/about-telephone-mobile.jpg 1x">
                         <img class="benifits__img" src="img/about-benifits1.jpg"
                             srcset="img/about-benifits1@2x.jpg 2x, img/about-benifits1.jpg 1x" alt="telefonli qiz"
@@ -63,10 +63,10 @@
                 </li>
                 <li class="benifits__item benifits__item--better">
                     <picture>
-                        <source type="imahe/webp" media="(max-width: 767px)"
+                        <source type="image/webp" media="(max-width: 767px)"
                             srcset="img/trassa-mobile@2x.webp 2x, img/trassa-mobile.webp 1x">
                         <source type="image/webp" srcset="img/trassa@2x.webp 2x, img/trassa.webp 1x">
-                        <source media="(max-width: 719px)"
+                        <source media="(max-width: 767px)"
                             srcset="img/trassa-mobile@2x.jpg 2x, img/trassa-mobile.jpg 1x">
                         <img class="benifits__img" src="img/trassa.jpg" srcset="img/trassa@2x.jpg 2x, img/trassa.jpg 1x"
                             alt="manzali joy" width="445" height="445">
@@ -180,11 +180,18 @@
         <section class="cta">
             <div class="container cta__container">
                 <h2 class="cta__title">Sign up and Scoot off today</h2>
-                <div class="cta__logo">
-                    <a class="cta__logo-link" href="#"><img src="img/appstory.svg" alt="app story" width="159"
-                            height="56"></a>
-                    <a href="#"><img src="img/playmarket.svg" alt="play market" width="182" height="56"></a>
-                </div>
+                <ul class="cta__list">
+                    <li class="cta__item">
+                        <a href="#">
+                            <img class="cta__list-img" src="img/appstory.svg" alt="app story" width="159" height="56">
+                        </a>
+                    </li>
+                    <li class="cta__item">
+                        <a href="#">
+                            <img class="cta__list-img" src="img/playmarket.svg" alt="play market" width="182" height="56">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </section>
     </main>

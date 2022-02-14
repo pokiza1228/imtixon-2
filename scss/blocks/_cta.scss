@@ -34,15 +34,18 @@
     color: #FFFFFF;
     width: 415px;
 }
-.cta__logo {
+.cta__list {
     margin-left: auto;
     display: flex;
-
+    list-style: none;
 }
-.cta__logo-link {
+.cta__item {
     margin-right: 18px;
+    &:last-child {
+        margin-right: 0;
+    }
 }
-.cta__logo-img {
+.cta__list-img {
     width: 182px;
     height: 56px;
 }
@@ -69,14 +72,14 @@
        flex-direction: column;
        justify-content: center;
     }
-    .cta__logo {
+    .cta__list {
         margin: 0;
         margin-top: 40px;
     }
     .cta__title {
         text-align: center;
     }
-    .cta__logo-img {
+    .cta__list-img {
         width: 113px;
         height: 40px;
     }
