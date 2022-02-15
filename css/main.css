@@ -539,6 +539,15 @@ a {
     -webkit-animation: header--opened 300ms linear;
             animation: header--opened 300ms linear;
   }
+  .header__nav--opened::before {
+    content: "";
+    height: calc(100vh - 74px);
+    background-color: #000;
+    opacity: 0.5;
+    position: absolute;
+    left: 256px;
+    width: 100vw;
+  }
   .header__nav--opened .nav__list {
     display: block;
     margin-left: 0;
