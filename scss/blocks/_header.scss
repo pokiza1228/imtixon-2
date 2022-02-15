@@ -1,3 +1,11 @@
+@keyframes header--opened {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
 .header {
     padding-top: 22px;
     padding-bottom: 21px;
@@ -33,6 +41,7 @@
             padding-top: 64px;
         }
         background-color: #333A44;
+        animation: header--opened 300ms linear;
     }
     .header__nav--opened .nav__list .nav__item {
         margin: 0;
@@ -46,6 +55,7 @@
         position: absolute;
         top: calc(95vh - 74px);
         //margin-left: 32px;
+        animation: header--opened 300ms linear;
     }
     .header__link {
         display: none;
