@@ -530,7 +530,7 @@ a {
   .header__nav--opened + .header__link {
     display: inline;
     position: absolute;
-    top: calc(80vh - 74px);
+    top: calc(90vh - 74px);
   }
   .header__link {
     display: none;
