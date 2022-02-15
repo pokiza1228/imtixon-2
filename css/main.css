@@ -529,7 +529,7 @@ a {
   .header__nav--opened {
     width: 256px;
     display: block;
-    padding-left: 15px;
+    padding-left: 32px;
     position: absolute;
     top: 100%;
     left: 0;
@@ -555,6 +555,7 @@ a {
     display: inline;
     position: absolute;
     top: calc(95vh - 74px);
+    left: 32px;
     -webkit-animation: header--opened 300ms linear;
             animation: header--opened 300ms linear;
   }
