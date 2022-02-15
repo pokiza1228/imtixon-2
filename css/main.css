@@ -507,7 +507,7 @@ a {
   .header__nav--opened {
     width: 256px;
     display: block;
-    padding-left: 10px;
+    padding-left: 15px;
     position: absolute;
     top: 100%;
     left: 0;
