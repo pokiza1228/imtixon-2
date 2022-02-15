@@ -29,7 +29,7 @@
     .header__nav--opened {
         width: 256px;
         display: block;
-        padding-left: 15px;
+        padding-left: 32px;
         position: absolute;
         top: 100%;
         left: 0;
@@ -54,7 +54,7 @@
         display: inline;
         position: absolute;
         top: calc(95vh - 74px);
-        //margin-left: 32px;
+        left: 32px;
         animation: header--opened 300ms linear;
     }
     .header__link {
