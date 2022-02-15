@@ -544,7 +544,7 @@ a {
     content: "";
     height: calc(100vh - 74px);
     background-color: #000;
-    opacity: 0.5;
+    opacity: 0.75;
     position: absolute;
     left: 256px;
     width: 100vw;
