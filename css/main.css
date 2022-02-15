@@ -762,15 +762,14 @@ a {
 }
 
 .guide__list::after {
-  border: 15px solid #E5ECF4;
   background-color: #E5ECF4;
   display: block;
-  height: 1px;
-  width: 65%;
+  height: 15px;
+  width: 68%;
   content: "";
   position: absolute;
   z-index: -1;
-  top: 188px;
+  top: 198px;
   left: 0;
 }
 
@@ -841,10 +840,10 @@ a {
     padding: 0 58px;
   }
   .guide__list::after {
-    width: 1px;
+    width: 15px;
     height: 512px;
     top: 0;
-    left: calc(50% - 254px);
+    left: calc(50% - 248px);
   }
   .guide__item {
     padding: 0;
@@ -884,7 +883,6 @@ a {
 
 .benifits {
   margin-bottom: 307px;
-  max-width: 1440px;
   overflow: hidden;
 }
 

@@ -10,15 +10,14 @@
     justify-content: space-between;
     
     &::after {
-        border: 15px solid #E5ECF4;
         background-color: #E5ECF4;
         display: block;
-        height: 1px;
-        width: 65%;
+        height: 15px;
+        width: 68%;
         content: "";
         position: absolute;
         z-index: -1;
-        top: 188px;
+        top: 198px;
         left: 0;
     }
 }
@@ -82,10 +81,10 @@
         align-content: start;
         padding: 0 58px;
         &::after {
-            width: 1px;
+            width: 15px;
             height: 512px;
             top: 0;
-            left: calc(50% - 254px);
+            left: calc(50% - 248px);
         }
     }
     .guide__item {
