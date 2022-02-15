@@ -31,6 +31,7 @@
         display: block;
         padding-left: 32px;
         position: absolute;
+        z-index: 2;
         top: 100%;
         left: 0;
         height: calc(100vh - 74px);
@@ -63,6 +64,7 @@
     .header__nav--opened +.header__link {
         display: inline;
         position: absolute;
+        z-index: 2;
         top: calc(95vh - 74px);
         left: 32px;
         animation: header--opened 300ms linear;
